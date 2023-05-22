@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}<title>Open2Help</title>{% endblock %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstantEvents</title>
+    <script src="https://kit.fontawesome.com/297dabe10f.js" crossorigin="anonymous"></script>
+    {% load static %}
+
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'Images/favicoin.png' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="{% static 'Images/logo-InstantEvent.png' %}" alt="logo" />
+        </div>
+        <nav>
+            <div class="nav-container">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Organizador</a></li>
+                </ul>
+                <ul>
+                    <li><a href="Registro.html">Registrarse</a></li>
+                    <li><a href="#">Iniciar sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>

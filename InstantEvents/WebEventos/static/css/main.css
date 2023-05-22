@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #172C47;
+    box-shadow: 0 2px 4px 0 rgba(23,44,71,5);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+header .logo-container img {
+    height: 70px;
+}
+
+header nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav {
+    margin-right: 60px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #CABF95;
+    font-weight: bold;
+}
+
+ 
+header nav ul li a[href*="Registro.html"] {
+    border: 2px solid #CABF95;
+    border-radius: 10px;
+    padding: 5px 10px;
+
+}
+
+
+
+
+
+
+
+
+
+.img-main-principal {
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.img-main-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4em;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+    font-weight: bold;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    text-align: center;  
+    width: 80%; 
+}
+
+.gradient-banner {
+    height: 100px;
+    background: linear-gradient(to bottom, #172C47, transparent);
+    width: 100%;
+}
+.gradient-banner-card {
+    height: 20px;
+    background: linear-gradient(to bottom, #172C47, transparent);
+    width: 100%;
+}
+
+
+
+
+.titulo-main{
+    text-align: center;
+    color: #172C47;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    margin-top: 20px;
+    font-size: 3em;
+    text-shadow: 1px 1px 2px rgb(12, 12, 12);
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 80px;
+}
+  
+.card {
+    width: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #fff;
+    
+    border-radius: 45px;
+    overflow: hidden;
+}
+  
+.card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    margin-bottom: -5px;
+}
+
+.text-card{
+    font-size: 2em;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 8px;
+}
+  
+.middle-card {
+    transform: translateY(-50px);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.p-descripcion{
+    color: #5d5d5d;
+}
+
+.p-info-card{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.precio-card{
+    color: rgb(255, 49, 49);
+    font-size: 2em;
+    margin-bottom: -40px;
+}

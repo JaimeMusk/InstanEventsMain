@@ -1,0 +1,42 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>Home</title>{% endblock %}
+
+{% block content %}
+{% load static %}
+    <div class="img-main-principal">
+        <img src="{% static 'Images/img-main-principal1.jpeg' %}" alt="Descripción de la imagen">
+        <div class="overlay-text">¡Las mejores experiencias!</div>
+    </div>
+    <div class="gradient-banner"></div>
+
+    <h1 class="titulo-main">Ofertas destacadas</h1>
+    <div class="card-container">
+        <div class="card">
+          <img src="{% static 'Images/main-card1.jpeg' %}" alt="Imagen 1">
+          <div class="gradient-banner-card"></div>
+          <h3 class="text-card">Conduce un Porsche gt3 en el circito del Jarama - 2 vueltas</h3>
+          <p class="p-info-card p-descripcion"><i class="fa-solid fa-user-group"></i> 1 persona</p>
+          <p class="p-info-card p-descripcion"><i class="fa-solid fa-location-dot"></i> Madrid - Jarama</p>
+          <p class="p-info-card precio-card">98€</p>
+        </div>
+        
+        <div class="card middle-card">
+          <img src="{% static 'Images/main-card2.jpeg' %}" alt="Imagen 2">
+          <div class="gradient-banner-card"></div>
+          <h3 class="text-card">1 salto en paracaidas 1 persona - aeródrommo Bages (Barcelona)</h3>
+          <p class="p-info-card p-descripcion"><i class="fa-solid fa-user-group"></i> 1 persona</p>
+          <p class="p-info-card p-descripcion"><i class="fa-solid fa-location-dot"></i> Barcelona</p>
+          <p class="p-info-card precio-card">249€</p>
+        </div>
+        
+        <div class="card">
+          <img src="{% static 'Images/main-card3.jpeg' %}" alt="Imagen 3">
+          <div class="gradient-banner-card"></div>
+          <h3 class="text-card">Cena gourmet en restaurante de la Guía MICHELIN</h3>
+          <p class="p-info-card p-descripcion"><i class="fa-solid fa-user-group"></i> 2 personas</p>
+          <p class="p-info-card p-descripcion"><i class="fa-solid fa-location-dot"></i> Madrid</p>
+          <p class="p-info-card precio-card">74€</p>
+        </div>
+    </div>
+{% endblock %}
